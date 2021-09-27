@@ -7,6 +7,7 @@
 }
 
 body {
+  overflow-x: hidden;
   width: 100%;
   min-height: 100vh;
   background-color: rgb(246, 246, 246);
@@ -24,4 +25,22 @@ div div {
   background-color: #fff;
   text-align: center;
   width: calc((100% - 20px) / 5);
+}
+
+h3,
+p {
+  width: 100%;
+  background-color: #fff;
+}
+
+@media (max-width: 910px) {
+  div div {
+    width: calc(90% / 3);
+  }
+}
+
+@media (max-width: 620px) {
+  div div {
+    width: 95%;
+  }
 }
